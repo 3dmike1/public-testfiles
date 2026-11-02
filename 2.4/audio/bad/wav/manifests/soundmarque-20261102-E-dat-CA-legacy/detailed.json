@@ -1,0 +1,217 @@
+{
+  "active_manifest": "urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f",
+  "manifests": {
+    "urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f": {
+      "claim": {
+        "instanceID": "xmp:iid:2b196410-8e6c-4012-977e-cf312a5bc4bf",
+        "claim_generator_info": {
+          "name": "Soundmarque",
+          "version": "0.1.0",
+          "org.contentauth.c2pa_rs": "0.90.7",
+          "specVersion": "2.4"
+        },
+        "signature": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+        "created_assertions": [
+          {
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions.v2",
+            "hash": "lxfa9lazNtlVFFGJusCkLVyG874ej3oHBA1aIxq5O3c="
+          },
+          {
+            "url": "self#jumbf=c2pa.assertions/cawg.metadata",
+            "hash": "CRbmwIUO/I4IBq4vgZJ7UsEw8cwzntaxzokCgoqV+v0="
+          },
+          {
+            "url": "self#jumbf=c2pa.assertions/org.soundmarque.signing",
+            "hash": "6MrmMnuv73NK7cY1fAb/DU3qpVmGUAnvsX8BCS2sUaU="
+          },
+          {
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data",
+            "hash": "egTxp9PVmigpO4ArrJHlbk25XjmUndH5DD1tbmfpkRI="
+          }
+        ],
+        "gathered_assertions": [
+          {
+            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient.v3",
+            "hash": "Qk205eUTdMLX9qbb3+EaTfLKyNPBORr17Rtil+HMVDk="
+          },
+          {
+            "url": "self#jumbf=c2pa.assertions/c2pa.soft-binding",
+            "hash": "vAxpZMf9nEw8xDD87DN3+Dm5Qb2FBWDNGCKsncGO1Yg="
+          }
+        ],
+        "dc:title": "Retroactive provenance: legacy master, no prior manifest",
+        "alg": "sha256",
+        "claim_version": 2
+      },
+      "assertion_store": {
+        "c2pa.ingredient.v3": {
+          "relationship": "parentOf",
+          "dc:title": "Legacy master (no prior manifest)",
+          "dc:format": "audio/wav",
+          "instanceID": "xmp:iid:b94b9d12-0db2-4782-a63c-91e928162d48"
+        },
+        "org.soundmarque.signing": {
+          "mode": "provenance-only",
+          "rights_record": "none",
+          "signing_job_id": "983fe64a-5475-4f65-9097-2360ce1c737a",
+          "submitted_by": "Soundmarque Internal QA"
+        },
+        "c2pa.hash.data": {
+          "exclusions": [
+            {
+              "start": 6010478,
+              "length": 16362
+            }
+          ],
+          "name": "jumbf manifest",
+          "alg": "sha256",
+          "hash": "0QRcb+Fi+gpa7zcYO40F3sX8rlpBN24gLg/VnA1HSFY=",
+          "pad": "AAAAAAAAAAA="
+        },
+        "c2pa.actions.v2": {
+          "actions": [
+            {
+              "action": "c2pa.opened",
+              "parameters": {
+                "ingredients": [
+                  {
+                    "url": "self#jumbf=c2pa.assertions/c2pa.ingredient.v3",
+                    "hash": "Qk205eUTdMLX9qbb3+EaTfLKyNPBORr17Rtil+HMVDk="
+                  }
+                ]
+              }
+            },
+            {
+              "action": "c2pa.watermarked.bound"
+            }
+          ],
+          "allActionsIncluded": true,
+          "templates": [
+            {
+              "action": "c2pa.opened",
+              "softwareAgent": {
+                "name": "Soundmarque test files",
+                "version": "1.0"
+              }
+            }
+          ]
+        },
+        "c2pa.soft-binding": {
+          "alg": "ai.trufo.pawprint.watermark",
+          "blocks": [
+            {
+              "scope": {},
+              "value": "v1.001c1f41c99"
+            }
+          ]
+        },
+        "cawg.metadata": {
+          "@context": {
+            "dc": "http://purl.org/dc/elements/1.1/"
+          },
+          "dc:title": [
+            "Retroactive provenance: legacy master, no prior manifest"
+          ]
+        }
+      },
+      "signature": {
+        "alg": "es256",
+        "issuer": "Soundmarque Inc.",
+        "common_name": "Soundmarque",
+        "time": "2026-11-02T05:22:25+00:00"
+      }
+    }
+  },
+  "validation_results": {
+    "activeManifest": {
+      "success": [
+        {
+          "code": "timeStamp.validated",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+          "explanation": "timestamp message digest matched: Trufo C2PA TSA (2026)"
+        },
+        {
+          "code": "timeStamp.trusted",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+          "explanation": "timestamp cert trusted: Trufo C2PA TSA (2026)"
+        },
+        {
+          "code": "signingCredential.trusted",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+          "explanation": "signing certificate trusted, found in System trust anchors"
+        },
+        {
+          "code": "claimSignature.insideValidity",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+          "explanation": "claim signature valid"
+        },
+        {
+          "code": "claimSignature.validated",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+          "explanation": "claim signature valid"
+        },
+        {
+          "code": "assertion.hashedURI.match",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.actions.v2",
+          "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions.v2"
+        },
+        {
+          "code": "assertion.hashedURI.match",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/cawg.metadata",
+          "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/cawg.metadata"
+        },
+        {
+          "code": "assertion.hashedURI.match",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/org.soundmarque.signing",
+          "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/org.soundmarque.signing"
+        },
+        {
+          "code": "assertion.hashedURI.match",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.hash.data",
+          "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data"
+        },
+        {
+          "code": "assertion.hashedURI.match",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.ingredient.v3",
+          "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.ingredient.v3"
+        },
+        {
+          "code": "assertion.hashedURI.match",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.soft-binding",
+          "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.soft-binding"
+        }
+      ],
+      "informational": [
+        {
+          "code": "signingCredential.ocsp.notRevoked",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.signature",
+          "explanation": "signing cert not revoked: 87830149825186248386087409805388891218486717292"
+        }
+      ],
+      "failure": [
+        {
+          "code": "assertion.dataHash.mismatch",
+          "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.hash.data",
+          "explanation": "asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )"
+        }
+      ]
+    },
+    "ingredientDeltas": [
+      {
+        "ingredientAssertionURI": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.ingredient.v3",
+        "validationDeltas": {
+          "success": [],
+          "informational": [
+            {
+              "code": "ingredient.unknownProvenance",
+              "url": "self#jumbf=/c2pa/urn:c2pa:7386ba0e-1334-474d-8da1-07f47dd6b61f/c2pa.assertions/c2pa.ingredient.v3",
+              "explanation": "Legacy master (no prior manifest): ingredient does not have provenance"
+            }
+          ],
+          "failure": []
+        }
+      }
+    ]
+  },
+  "validation_state": "Invalid"
+}
